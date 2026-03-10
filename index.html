@@ -60,11 +60,11 @@
       --ocean-800: #003a5a;
       --ocean-900: #00192d;
 
-      /* CTAs + accents — ocean instead of terracotta */
-      --terra-300: #1ab1ff;   /* ocean-400 (highlight, was warm orange) */
-      --terra-400: #009fdf;   /* ocean-500 */
-      --terra-500: #007db3;   /* ocean-600 — primary CTA */
-      --terra-600: #005c86;   /* ocean-700 — hover */
+      /* CTAs + accents — orange */
+      --terra-300: #FFB74D;   /* amber light */
+      --terra-400: #FF9800;   /* orange */
+      --terra-500: #F57C00;   /* deep orange — primary CTA */
+      --terra-600: #E65100;   /* deep orange dark — hover */
 
       /* Availability — sage (kept) */
       --sage-300: #A8D4B5;
@@ -1111,6 +1111,7 @@
       background: white;
     }
     .faq-q {
+      width: 100%;
       padding: 20px var(--space-4);
       font-family: var(--font-body);
       font-size: 1.0625rem;
@@ -1122,6 +1123,9 @@
       align-items: center;
       gap: var(--space-3);
       user-select: none;
+      background: none;
+      border: none;
+      text-align: left;
       transition: background var(--duration-fast) var(--ease-out);
     }
     .faq-q:hover { background: var(--cream-100); }
@@ -1510,7 +1514,7 @@
     <!-- Left: Editorial headline -->
     <div class="hero-main">
       <img
-        src="images/lido-azzurro-logo-bianco.png"
+        src="images/lido-azzurro-logo-bianco-2.png"
         alt="Piscina Lido Azzurro"
         class="hero-logo"
         onerror="this.style.display='none'">
