@@ -168,10 +168,24 @@
       z-index: 1;
     }
 
+    .hero-logos {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      margin-bottom: var(--space-5);
+    }
+    .hero-logos::after {
+      content: '';
+      display: none;
+    }
     .hero-logo {
       width: 200px;
-      margin-bottom: var(--space-5);
       opacity: 0.95;
+      flex-shrink: 0;
+    }
+    .hero-logo--np {
+      width: 80px;
+      opacity: 0.85;
     }
 
     .hero-eyebrow {
@@ -1513,11 +1527,18 @@
 
     <!-- Left: Editorial headline -->
     <div class="hero-main">
-      <img
-        src="images/lido-azzurro-logo-bianco-2.png"
-        alt="Piscina Lido Azzurro"
-        class="hero-logo"
-        onerror="this.style.display='none'">
+      <div class="hero-logos">
+        <img
+          src="images/lido-azzurro-logo-bianco-2.png"
+          alt="Piscina Lido Azzurro"
+          class="hero-logo"
+          onerror="this.style.display='none'">
+        <img
+          src="images/logo-npvaredo.png"
+          alt="NP Varedo"
+          class="hero-logo hero-logo--np"
+          onerror="this.style.display='none'">
+      </div>
 
       <div class="hero-eyebrow">
         <span class="hero-eyebrow-rule" aria-hidden="true"></span>
